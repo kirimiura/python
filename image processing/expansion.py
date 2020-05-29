@@ -19,3 +19,4 @@ for i in range(tate//2):
         changeimage[2*i+1][2*j+1]=inimage[i+x][j+y]
 
 cv2.imwrite('03200242三浦乙利_1-2_out.jpg',changeimage)
+hogehoge
