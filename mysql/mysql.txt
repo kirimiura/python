@@ -4,3 +4,8 @@
 mysql -u ユーザー名 -p;
 ・終了
 \q
+4大命令
+insert データの追加
+select データの参照
+update データの更新
+delete データの削除
