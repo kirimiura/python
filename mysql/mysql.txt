@@ -4,8 +4,31 @@
 mysql -u ユーザー名 -p;
 ・終了
 \q
+・データベース作成
+CREATE DATABASE データベース名;
+・データベース切り替え
+USE データベース名;
+・現在のデータベース名確認
+SELECT DATABASE();
+・データベースの中身一覧を取得
+SHOW DATABASES;
+・データベースの削除
+DROP DATABSE データベース名;
+・テーブル生成
+CREATE TABLE テーブル名(
+カラム名 型 その他,
+カラム名 型 その他
+);
+・テーブル確認
+show tables
 4大命令
-insert データの追加
-select データの参照
-update データの更新
-delete データの削除
+・insert データの追加
+INSERT INTO テーブル名 (カラム名1, カラム名2, ...) VALUES (値1, 値2, ...);
+・select データの参照
+SELECT カラム名1, カラム名2, ... FROM テーブル名 [WHERE 絞込条件];
+* ですべてのデータ
+・update データの更新
+UPDATE テーブル名 SET カラム名1=値1 [, カラム名2=値2 ...] [WHERE 絞込条件];
+・delete データの削除
+DELETE FROM テーブル名 [WHERE 絞込条件];
+
